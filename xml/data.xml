@@ -207,4 +207,29 @@
 <entry><time>21:00</time><date>2025-11-15</date><light>240</light><temperature>21.0</temperature><humidity>57</humidity><moisture>49</moisture><ph>6.1</ph></entry>
 <entry><time>22:00</time><date>2025-11-15</date><light>230</light><temperature>20.8</temperature><humidity>58</humidity><moisture>48</moisture><ph>6.0</ph></entry>
 <entry><time>23:00</time><date>2025-11-15</date><light>220</light><temperature>20.5</temperature><humidity>59</humidity><moisture>47</moisture><ph>6.1</ph></entry>
+
+<entry><date>2025-11-17</date><time>00:00</time><light>100</light><temperature>23.1</temperature><humidity>70</humidity><moisture>45</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>01:00</time><light>95</light><temperature>23.0</temperature><humidity>71</humidity><moisture>46</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>02:00</time><light>90</light><temperature>22.9</temperature><humidity>72</humidity><moisture>47</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>03:00</time><light>85</light><temperature>22.8</temperature><humidity>73</humidity><moisture>48</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>04:00</time><light>80</light><temperature>22.7</temperature><humidity>74</humidity><moisture>49</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>05:00</time><light>75</light><temperature>22.6</temperature><humidity>75</humidity><moisture>50</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>06:00</time><light>200</light><temperature>23.0</temperature><humidity>72</humidity><moisture>48</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>07:00</time><light>400</light><temperature>24.0</temperature><humidity>70</humidity><moisture>47</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>08:00</time><light>600</light><temperature>25.0</temperature><humidity>68</humidity><moisture>46</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>09:00</time><light>700</light><temperature>26.0</temperature><humidity>66</humidity><moisture>45</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>10:00</time><light>800</light><temperature>27.0</temperature><humidity>64</humidity><moisture>44</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>11:00</time><light>850</light><temperature>28.0</temperature><humidity>62</humidity><moisture>43</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>12:00</time><light>900</light><temperature>29.0</temperature><humidity>60</humidity><moisture>42</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>13:00</time><light>880</light><temperature>29.5</temperature><humidity>59</humidity><moisture>41</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>14:00</time><light>860</light><temperature>30.0</temperature><humidity>58</humidity><moisture>40</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>15:00</time><light>820</light><temperature>29.8</temperature><humidity>59</humidity><moisture>41</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>16:00</time><light>700</light><temperature>28.5</temperature><humidity>61</humidity><moisture>42</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>17:00</time><light>500</light><temperature>27.0</temperature><humidity>63</humidity><moisture>43</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>18:00</time><light>300</light><temperature>25.5</temperature><humidity>65</humidity><moisture>44</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>19:00</time><light>150</light><temperature>24.5</temperature><humidity>67</humidity><moisture>45</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>20:00</time><light>120</light><temperature>24.0</temperature><humidity>68</humidity><moisture>46</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>21:00</time><light>110</light><temperature>23.8</temperature><humidity>69</humidity><moisture>47</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>22:00</time><light>105</light><temperature>23.6</temperature><humidity>70</humidity><moisture>48</moisture><ph>6.8</ph></entry>
+  <entry><date>2025-11-17</date><time>23:00</time><light>100</light><temperature>23.4</temperature><humidity>71</humidity><moisture>49</moisture><ph>6.8</ph></entry>
 </crop>
