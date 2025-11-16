@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Critical Notifications - HydroSmart</title>
+    <link rel="stylesheet" href="../css/styles2.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">← Back to Dashboard</a>
+        </nav>
+        <h1>Critical Notifications</h1>
+    </header>
+
+    <main class="content-section">
+        <label for="dateFilter">Filter by date:</label>
+        <input type="date" id="dateFilter" />
+        <div id="notificationsContainer"></div>
+
+        <section class="legend-section">
+            <h2>Legend</h2>
+            <p>Color coding used in notifications:</p>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-box safe"></span>
+                    <span>Safe / within optimal range</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-box critical"></span>
+                    <span>Critical / outside safe range</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hydroponics</p>
+    </footer>
+
+    <script src="../js/notifications.js"></script>
+    <script src="../js/buttons.js"></script>
+</body>
+
+</html>

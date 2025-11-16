@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroSmart Hydroponics</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <button id="toggleSidebar" class="hamburger" aria-label="Toggle sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <h1>Hydroponics</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><button id="btnArticle">Home</button></li>
+        <li><button id="btnTable">Table</button></li>
+        <li><button id="btnChart">Chart</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside id="sidebar" class="sidebar-collapsed">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/notifications.html">Notifications</a></li>
+      </ul>
+    </aside>
+
+    <!-- HOME PAGE (was ARTICLE) -->
+    <main id="article-section" class="content-section">
+      <section>
+        <h2>Yesterdays's Summary</h2>
+
+        <div class="home-summary"
+          style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px;">
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Average Light</h3>
+            <div id="avgLight" style="font-size:20px;font-weight:700;">—</div>
+          </div>
+
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Average Temperature (°C)</h3>
+            <div id="avgTemp" style="font-size:20px;font-weight:700;">—</div>
+          </div>
+
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Average Humidity (%)</h3>
+            <div id="avgHum" style="font-size:20px;font-weight:700;">—</div>
+          </div>
+
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Average Moisture (%)</h3>
+            <div id="avgMoist" style="font-size:20px;font-weight:700;">—</div>
+          </div>
+
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Average pH</h3>
+            <div id="avgPH" style="font-size:20px;font-weight:700;">—</div>
+          </div>
+
+          <div class="card"
+            style="padding:12px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <h3>Records (today)</h3>
+            <div id="todayCount" style="font-size:20px;font-weight:700;">0</div>
+          </div>
+        </div>
+
+        <p id="homeUpdated" style="margin-top:12px;color:#666;font-size:13px;">Last updated: —</p>
+
+        <div id="waterAlert"
+          style="margin-top:20px;padding:16px;border-radius:8px;background:#f8d7da;color:#721c24;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+          <p id="waterMessage" style="margin:0 0 12px 0;font-weight:600;">
+            Soil moisture of the garden is dropping, click to water manually
+          </p>
+          <button id="btnWater"
+            style="padding:10px 16px;border:none;border-radius:6px;background:#078080;color:#fff;font-size:1rem;cursor:pointer;">
+            Water Now
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- TABLE PAGE -->
+    <main id="table-section" class="content-section hidden">
+      <section>
+        <h2>Crop Data Table</h2>
+        <div class="crop-block">
+          <h3 style="margin-top:6px;margin-bottom:6px;">Crop: Lettuce</h3>
+          <div class="table-controls" style="margin-bottom:12px;display:flex;gap:8px;align-items:center;">
+            <label for="dateSelect" style="font-weight:600;">Show data for day:</label>
+            <input type="date" id="dateSelect" />
+            <button id="btnFilterDate">Filter</button>
+            <button id="btnClearDate">Clear</button>
+            <span id="tableStatus" aria-live="polite" style="color:#666;margin-left:8px;"></span>
+          </div>
+
+          <table id="dataTable">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Light</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Moisture</th>
+                <th>pH</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- CHART PAGE -->
+    <main id="chart-section" class="content-section hidden">
+      <section>
+        <h2>Crop Data Visualization</h2>
+        <div class="chart-block">
+          <h3 style="margin-top:6px;margin-bottom:6px;">Crop: Lettuce</h3>
+          <div class="chart-header">
+            <label for="chartDateSelect" style="font-weight:600;margin-right:8px;">Show data for day:</label>
+            <input type="date" id="chartDateSelect" />
+            <button id="btnFilterChart">Apply</button>
+            <button id="btnClearChart">Clear</button>
+            <span id="chartStatus" aria-live="polite" style="color:#666;margin-left:8px;"></span>
+            <div class="chart-controls">
+              <label>Chart Type:</label>
+              <select id="chartType">
+                <option value="line">Line</option>
+                <option value="bar">Bar</option>
+                <option value="area">Area</option>
+              </select>
+              <label>Parameter:</label>
+              <select id="parameterSelect">
+                <option value="all">All</option>
+                <option value="light">Light</option>
+                <option value="temperature">Temperature</option>
+                <option value="humidity">Humidity</option>
+                <option value="moisture">Moisture</option>
+                <option value="ph">pH</option>
+              </select>
+            </div>
+          </div>
+          <div id="dataChart"></div>
+          <p id="analysisText"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hydroponics</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnWater = document.getElementById("btnWater");
+      const waterAlert = document.getElementById("waterAlert");
+      const waterMessage = document.getElementById("waterMessage");
+
+      if (btnWater && waterAlert && waterMessage) {
+        btnWater.addEventListener("click", () => {
+          const confirmAction = confirm("Soil moisture is low. Do you want to water manually?");
+          if (confirmAction) {
+            // Change message
+            waterMessage.textContent = "Garden watered successfully, you're good for the next few hours";
+
+            // Change alert styling to bluish green theme
+            waterAlert.style.background = "#86ffff";   // aqua/teal tone
+            waterAlert.style.color = "#232323";        // dark text for contrast
+            waterAlert.style.border = "2px solid #078080";
+
+            // Disable button
+            btnWater.textContent = "Watering...";
+            btnWater.disabled = true;
+            btnWater.style.opacity = "0.6";
+            btnWater.style.cursor = "not-allowed";
+          }
+        });
+      }
+    });
+  </script>
+  <script src="js/apexcharts.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/buttons.js"></script>
+</body>
+
+</html>
